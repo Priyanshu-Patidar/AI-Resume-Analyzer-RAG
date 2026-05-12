@@ -1,5 +1,5 @@
 
-# 🤖 AI Resume Analyzer RAG (LangChain + LangGraph + Supabase)
+# 🤖 AI Resume Analyzer RAG 
 
 An AI-powered **Resume Analyzer system** built using **Retrieval-Augmented Generation (RAG)** that evaluates resumes against job descriptions using **LangChain, LangGraph, OpenAI, and Supabase Vector Database**.
 
@@ -84,24 +84,26 @@ Backend (LangGraph Agent System)
         ▼
 OpenAI LLM + Supabase Vector DB
 =======
-## 🧱 System Architecture
-Frontend (Next.js / React)
-│
-│ Upload Resume + Job Description
-▼
-Backend (LangGraph Agent System)
-│
-├── Ingestion Graph
-│ └── Resume → Text → Embeddings → Supabase
-│
-├── Retrieval Graph
-│ └── Job Query → Vector Search → AI Evaluation
-│
-▼
-OpenAI LLM + Supabase Vector DB
+## 🏗️ System Architecture
 
+```mermaid
+flowchart LR
 
----
+A[Frontend - React / Next.js] --> B[Upload Resume + Job Description]
+B --> C[Backend - LangGraph Agent System]
+
+C --> D[Ingestion Graph]
+D --> D1[Resume → Text → Embeddings]
+D1 --> D2[Supabase Vector DB]
+
+C --> E[Retrieval Graph]
+E --> E1[Job Query]
+E1 --> E2[Vector Search]
+E2 --> E3[LLM Analysis]
+
+E3 --> F[OpenAI LLM]
+F --> G[Final Evaluation]
+```
 
 ## 🛠 Tech Stack
 
