@@ -1,4 +1,4 @@
-# 🤖 AI Resume Analyzer RAG (LangChain + LangGraph + Supabase)
+# 🤖 AI Resume Analyzer RAG
 
 An advanced **AI-powered Resume Analyzer system** that uses **Retrieval-Augmented Generation (RAG)** to evaluate resumes against job descriptions using **LangChain, LangGraph, OpenAI, and Supabase Vector Database**.
 
@@ -71,8 +71,14 @@ OpenAI LLM + Supabase Vector DB
 ```bash
 git clone https://github.com/Priyanshu-Patidar/AI-Resume-Analyzer-RAG.git
 cd AI-Resume-Analyzer-RAG
+
+
+
 2. Install dependencies
 yarn install
+
+
+
 🔐 Environment Variables
 Backend .env
 OPENAI_API_KEY=your_openai_api_key
@@ -81,6 +87,9 @@ SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_key
 
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_PROJECT=ai-resume-analyzer
+
+
+
 Frontend .env
 NEXT_PUBLIC_LANGGRAPH_API_URL=http://localhost:2024
 
@@ -89,7 +98,10 @@ LANGGRAPH_RETRIEVAL_ASSISTANT_ID=retrieval_graph
 
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_PROJECT=ai-resume-analyzer
-🚀 Running the Project
+
+
+
+### 🚀 Running the Project
 ▶ Start Backend (LangGraph)
 cd backend
 yarn langgraph:dev
