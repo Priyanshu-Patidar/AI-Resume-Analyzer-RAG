@@ -70,7 +70,6 @@ An advanced **AI-powered Resume Analyzer system** that uses **Retrieval-Augmente
 ## 🧱 Architecture Overview
 
 flowchart TD
-```mermaid
 
 A[Frontend: React / Next.js] --> B[Upload Resume + Job Description]
 
@@ -87,7 +86,6 @@ E2 --> F
 
 F --> G[OpenAI LLM Processing]
 G --> H[Final Matching & Insights]
-```
 =======
 ## 🏗️ System Architecture
 
