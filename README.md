@@ -86,7 +86,7 @@ E2 --> F
 
 F --> G[OpenAI LLM Processing]
 G --> H[Final Matching & Insights]
-=======
+
 ## 🏗️ System Architecture
 
 ```mermaid
