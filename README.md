@@ -69,24 +69,19 @@ An advanced **AI-powered Resume Analyzer system** that uses **Retrieval-Augmente
 
 ## 🧱 Architecture Overview
 
+f```mermaid
 flowchart TD
-
-A[Frontend: React / Next.js] --> B[Upload Resume + Job Description]
-
-B --> C[Backend: LangGraph Agent System]
-
-C --> D1[Ingestion Graph]
-D1 --> D2[Resume → Text → Embeddings → Supabase]
-
-C --> E1[Retrieval Graph]
-E1 --> E2[Job Query → Vector Search → LLM Analysis]
-
-D2 --> F[Supabase Vector DB]
-E2 --> F
-
-F --> G[OpenAI LLM Processing]
-G --> H[Final Matching & Insights]
-
+    A[Frontend: React / Next.js] --> B[Upload Resume + Job Description]
+    B --> C[Backend: LangGraph Agent System]
+    C --> D1[Ingestion Graph]
+    C --> E1[Retrieval Graph]
+    D1 --> D2[Resume to Text to Embeddings]
+    E1 --> E2[Job Query to Vector Search to LLM Analysis]
+    D2 --> F[Supabase Vector DB]
+    E2 --> F
+    F --> G[OpenAI LLM Processing]
+    G --> H[Final Matching and Insights]
+```
 ## 🏗️ System Architecture
 
 ```mermaid
