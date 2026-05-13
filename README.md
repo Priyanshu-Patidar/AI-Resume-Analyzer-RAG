@@ -69,7 +69,7 @@ An advanced **AI-powered Resume Analyzer system** that uses **Retrieval-Augmente
 
 ## 🧱 Architecture Overview
 
-f```mermaid
+```mermaid
 flowchart TD
     A[Frontend: React / Next.js] --> B[Upload Resume + Job Description]
     B --> C[Backend: LangGraph Agent System]
